@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD3E5D9D-6F64-4CF5-92D8-4421099B9219}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>SimStuManageSys</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataBaseOperate">
+      <HintPath>..\..\..\DataBaseOperate.dll</HintPath>
+    </Reference>
+    <Reference Include="DataBaseOperate2">
+      <HintPath>..\..\..\DataBaseOperate2.dll</HintPath>
+    </Reference>
+    <Reference Include="GetMD5, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\GetMD5.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminUser\loginUserInfoManage\ChangeLoginUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\loginUserInfoManage\ChangeLoginUserInfo.Designer.cs">
+      <DependentUpon>ChangeLoginUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\loginUserInfoManage\DelLoginUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\loginUserInfoManage\DelLoginUser.Designer.cs">
+      <DependentUpon>DelLoginUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginUI\frmAdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginUI\frmAdminMain.Designer.cs">
+      <DependentUpon>frmAdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginUI\frmStuMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginUI\frmStuMain.Designer.cs">
+      <DependentUpon>frmStuMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginUI\ReadMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginUI\ReadMe.Designer.cs">
+      <DependentUpon>ReadMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stuUser\StuInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuUser\StuInfo.Designer.cs">
+      <DependentUpon>StuInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stuUser\StuWebComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuUser\StuWebComments.Designer.cs">
+      <DependentUpon>StuWebComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vipUser\frmVipAllInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vipUser\frmVipAllInfo.Designer.cs">
+      <DependentUpon>frmVipAllInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\infoInput\InputEvalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\infoInput\InputEvalInfo.Designer.cs">
+      <DependentUpon>InputEvalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\loginUserInfoManage\AddLoginUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\loginUserInfoManage\AddLoginUser.Designer.cs">
+      <DependentUpon>AddLoginUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\infoInput\Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\infoInput\Department.designer.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\infoInput\ClassInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\infoInput\ClassInfo.designer.cs">
+      <DependentUpon>ClassInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teaUser\ClassScoreSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teaUser\ClassScoreSearch.Designer.cs">
+      <DependentUpon>ClassScoreSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stuUser\StuCourseSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuUser\StuCourseSearch.Designer.cs">
+      <DependentUpon>StuCourseSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stuUser\StuScoreSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuUser\StuScoreSearch.Designer.cs">
+      <DependentUpon>StuScoreSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stuUser\StuWebEvaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuUser\StuWebEvaluation.Designer.cs">
+      <DependentUpon>StuWebEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\help\frmContactAthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\help\frmContactAthor.Designer.cs">
+      <DependentUpon>frmContactAthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginUI\frmTeaMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginUI\frmTeaMain.Designer.cs">
+      <DependentUpon>frmTeaMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\infoInput\CourseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\infoInput\CourseInfo.designer.cs">
+      <DependentUpon>CourseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teaUser\InPutScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teaUser\InPutScore.Designer.cs">
+      <DependentUpon>InPutScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\dataMain\DataPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\dataMain\DataPrint.designer.cs">
+      <DependentUpon>DataPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\other\CentralUse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\other\CentralUse.Designer.cs">
+      <DependentUpon>CentralUse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stuUser\StuSelCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuUser\StuSelCourse.Designer.cs">
+      <DependentUpon>StuSelCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginUI\LoginUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginUI\LoginUI.Designer.cs">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\infoInput\ProfessionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\infoInput\ProfessionInfo.designer.cs">
+      <DependentUpon>ProfessionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\infoInput\SchoolInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\infoInput\SchoolInfo.Designer.cs">
+      <DependentUpon>SchoolInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\infoInput\StudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\infoInput\StudentInfo.designer.cs">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUser\infoInput\TeacherInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUser\infoInput\TeacherInfo.designer.cs">
+      <DependentUpon>TeacherInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teaUser\TeachingInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teaUser\TeachingInfo.Designer.cs">
+      <DependentUpon>TeachingInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminUser\loginUserInfoManage\ChangeLoginUserInfo.resx">
+      <DependentUpon>ChangeLoginUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\loginUserInfoManage\DelLoginUser.resx">
+      <DependentUpon>DelLoginUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginUI\frmAdminMain.resx">
+      <DependentUpon>frmAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginUI\frmStuMain.resx">
+      <DependentUpon>frmStuMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginUI\ReadMe.resx">
+      <DependentUpon>ReadMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stuUser\StuInfo.resx">
+      <DependentUpon>StuInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stuUser\StuWebComments.resx">
+      <DependentUpon>StuWebComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vipUser\frmVipAllInfo.resx">
+      <DependentUpon>frmVipAllInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\infoInput\InputEvalInfo.resx">
+      <DependentUpon>InputEvalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\loginUserInfoManage\AddLoginUser.resx">
+      <DependentUpon>AddLoginUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\infoInput\Department.resx">
+      <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\infoInput\ClassInfo.resx">
+      <DependentUpon>ClassInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teaUser\ClassScoreSearch.resx">
+      <DependentUpon>ClassScoreSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stuUser\StuCourseSearch.resx">
+      <DependentUpon>StuCourseSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stuUser\StuScoreSearch.resx">
+      <DependentUpon>StuScoreSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stuUser\StuWebEvaluation.resx">
+      <DependentUpon>StuWebEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\help\frmContactAthor.resx">
+      <DependentUpon>frmContactAthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginUI\frmTeaMain.resx">
+      <DependentUpon>frmTeaMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\infoInput\CourseInfo.resx">
+      <DependentUpon>CourseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teaUser\InPutScore.resx">
+      <DependentUpon>InPutScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\dataMain\DataPrint.resx">
+      <DependentUpon>DataPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\other\CentralUse.resx">
+      <DependentUpon>CentralUse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="stuUser\StuSelCourse.resx">
+      <DependentUpon>StuSelCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginUI\LoginUI.resx">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\infoInput\ProfessionInfo.resx">
+      <DependentUpon>ProfessionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\infoInput\SchoolInfo.resx">
+      <DependentUpon>SchoolInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\infoInput\StudentInfo.resx">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUser\infoInput\TeacherInfo.resx">
+      <DependentUpon>TeacherInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teaUser\TeachingInfo.resx">
+      <DependentUpon>TeachingInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{33EA8CD4-FBC8-4CE1-8DCB-CBE402009DC0}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{0BB9BBDD-343D-43E1-9B7D-91C92ADB677E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
